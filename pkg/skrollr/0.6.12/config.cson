@@ -1,0 +1,11 @@
+{
+  changelog:
+    '0.6.12': 'initial import'
+  id: 'skrollr'
+  main:
+    js: 'skrollr.min.js'
+    css: null
+  name: 'skrollr'
+  type: 'library'
+  version: '0.6.12'
+}
