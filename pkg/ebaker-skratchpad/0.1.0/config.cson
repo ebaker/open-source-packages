@@ -1,0 +1,14 @@
+{
+  author: 'Eliot Baker'
+  changelog:
+    '0.1.0': ''
+  contact: 'bryant@lessthan3.com'
+  description: 'An app for taking quick notes'
+  id: 'ebaker-skratchpad'
+  pages:
+    index:
+      hello: 'string'
+  name: 'Skratchpad'
+  type: 'app'
+  version: '0.1.0'
+}

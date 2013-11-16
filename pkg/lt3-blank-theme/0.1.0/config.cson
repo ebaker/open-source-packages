@@ -1,0 +1,14 @@
+{
+  changelog:
+    '0.1.0': 'initial import'
+  id: 'lt3-blank-theme'
+  name: 'Blank Theme'
+  settings:
+    style:
+      loading_color: {type: 'string', default: 'transparent'}
+    header:
+      navigation: 'navigation'
+    footer: {}
+  type: 'theme'
+  version: '0.1.0'
+}

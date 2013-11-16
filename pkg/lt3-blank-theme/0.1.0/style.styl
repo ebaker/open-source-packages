@@ -1,0 +1,40 @@
+#content
+  margin-top 0px
+
+#header.exports
+  box-shadow none
+  .admin-btn
+    display none
+    position fixed
+    top 20px
+    right 20px
+    font-size 12px
+    z-index 9
+  #navigation
+    display none
+
+html.admin
+  #header.exports
+    .admin-btn
+      display block !important
+
+#footer.exports
+  display none
+
+if loading_color
+  #loading
+    > .inner
+      > .outer
+        border-bottom 5px solid s(loading_color)
+        border-top 5px solid s(loading_color)
+        box-shadow 0 0 35px s(loading_color)
+        position relative
+        top -188px
+        left -1px
+      > .inner
+        border-bottom 5px solid s(loading_color)
+        border-top 5px solid s(loading_color)
+        box-shadow 0 0 15px s(loading_color)
+        position relative
+        top -236px
+        left -1px
