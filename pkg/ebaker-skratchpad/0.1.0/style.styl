@@ -1,13 +1,97 @@
+// google font import
+@import url('http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300')
+
+body {
+  font-family 'Merriweather Sans', sans-serif
+}
+
 @import 'nib'
 
 .exports
   margin 0 auto
-  width 900px
+  width 560px
 
 .exports .pages .page
-  background #ddd
-  padding 20px
+  background #fff
+  padding 0px 0px 0px
+  margin 0px
   > div
     color black
     font-weight bold
 
+// header
+#header
+  background black
+  position relative
+  text-align center
+  > .title
+    display inline-block
+    font-size 40px
+    line-height 100px
+    color: white
+
+// create skratch
+.new-skratch
+  padding-top 10px
+
+.insert
+  box-sizing border-box
+  width 100%
+  font-size 16px
+  padding 13px 15px 14px 12px
+
+// list scratches
+ul
+  padding-left 0px
+    
+li.skratch
+  list-style-type none
+  border-bottom 1px solid #000
+  padding-top 10px
+  min-height 60px
+  > .update
+    display none
+
+li.skratch.editing
+  > .skratch-view
+    display none
+  > .control
+    display none
+  > .update
+    display block
+
+div .skratch-view
+  width 400px
+  float left
+
+// edit skratches
+
+.update
+  width 95%
+  float left
+  display none
+  padding 13px 15px 14px 20px
+  font-size 18px
+
+// buttons
+
+button.edit-btn, button.remove-btn
+  padding 0px
+  margin-left 5px
+  float right
+  width 32px
+  height 32px
+  border 1px solid black
+  border-radius 7px
+  font-size 18px
+
+.edit-btn
+  background #f0ad4e
+
+.remove-btn
+  background #d9534f
+
+
+.timestamp
+  font-size 12px
+  background #EEE
