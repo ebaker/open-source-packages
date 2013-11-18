@@ -11,6 +11,7 @@ class exports.Page extends lt3.Page
       new_note = $('.insert').val()
       skratches = lt3.page.get('data.skratches').val()
       new_skratch = {note: new_note, timestamp: new Date().toString()}
+      # add skratch to skratches array
       skratches = new Array(new_skratch).concat(skratches)
       lt3.page.get('data.skratches').set(skratches)
 
@@ -28,7 +29,9 @@ class exports.Page extends lt3.Page
       data_id = $li.attr('data-id')
       skratches = lt3.page.get('data.skratches').val()
       skratch = skratches[data_id]
+      # only note is updated right now
       skratch.note = new_note
+      # update skratch in skratches array
       skratches[data_id] = skratch
       lt3.page.get('data.skratches').set(skratches)
 
@@ -43,6 +46,7 @@ class exports.Page extends lt3.Page
     # console.log($li)
     data_id = $li.attr('data-id')
     skratches = lt3.page.get('data.skratches').val()
+    # remove skratch from skratches array
     skratches.splice(data_id, 1)
     lt3.page.get('data.skratches').set(skratches)
 
@@ -54,7 +58,7 @@ class exports.Page extends lt3.Page
 
     # create skratch
     div class: 'new-skratch', ->
-      input class:'insert', type: 'text',  placeholder: 'type some text here...'
+      input class:'insert', type: 'text',  placeholder: 'type text note here...'
 
     # read scratches
     renderSkratch = (skratch, arr_index) ->
@@ -64,7 +68,7 @@ class exports.Page extends lt3.Page
             skratch.note
           span class: 'timestamp', ->
             skratch.timestamp
-        # skratch control buttons
+        # skratch edit and remove buttons
         button class: 'remove-btn control', ->
           i class: 'remove-btn icon icon-cancel'
         button class: 'edit-btn control', ->
