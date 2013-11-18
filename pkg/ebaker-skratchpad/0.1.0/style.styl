@@ -1,9 +1,8 @@
 // google font import
 @import url('http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300')
 
-body {
+body 
   font-family 'Merriweather Sans', sans-serif
-}
 
 @import 'nib'
 
@@ -22,10 +21,8 @@ body {
 // header
 #header
   background black
-  position relative
   text-align center
   > .title
-    display inline-block
     font-size 40px
     line-height 100px
     color: white
@@ -34,11 +31,17 @@ body {
 .new-skratch
   padding-top 10px
 
-.insert
+.insert, .update
   box-sizing border-box
   width 100%
   font-size 16px
   padding 13px 15px 14px 12px
+
+
+// edit skratches
+
+.update
+  display none
 
 // list scratches
 ul
@@ -60,18 +63,9 @@ li.skratch.editing
   > .update
     display block
 
-div .skratch-view
+div.skratch-view
   width 400px
   float left
-
-// edit skratches
-
-.update
-  width 95%
-  float left
-  display none
-  padding 13px 15px 14px 20px
-  font-size 18px
 
 // buttons
 
@@ -90,7 +84,6 @@ button.edit-btn, button.remove-btn
 
 .remove-btn
   background #d9534f
-
 
 .timestamp
   font-size 12px
