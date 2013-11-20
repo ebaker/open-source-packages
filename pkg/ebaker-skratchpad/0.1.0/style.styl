@@ -18,73 +18,72 @@ body
     color black
     font-weight bold
 
+.export 
 // header
-#header
-  background black
-  text-align center
-  > .title
-    font-size 40px
-    line-height 100px
-    color: white
-
-// create skratch
-.new-skratch
-  padding-top 10px
-
-.insert, .update
-  box-sizing border-box
-  width 100%
-  font-size 16px
-  padding 13px 15px 14px 12px
-
-
-// edit skratches
-
-.update
-  display none
-
-// list scratches
-ul
-  padding-left 0px
-    
-li.skratch
-  list-style-type none
-  border-bottom 1px solid #000
-  padding-top 10px
-  min-height 60px
-  > .update
+  #header
+    background black
+    text-align center
+    > .title
+      color white
+      font-size 40px
+      line-height 100px
+  
+  // create skratch
+  .new-skratch
+    padding-top 10px
+  
+  .insert, .update
+    box-sizing border-box
+    font-size 16px
+    padding 13px 15px 14px 12px
+    width 100%
+  
+  // edit skratches
+  
+  .update
     display none
+  
+  // list scratches
+  ul
+    padding-left 0px
+      
+  li.skratch
+    border-bottom 1px solid #000
+    list-style-type none
+    min-height 60px
+    padding-top 10px
+    > .update
+      display none
+  
+  li.skratch.editing
+    > .control
+      display none
+    > .update
+      display block
+    > .skratch-view
+      display none
+  
+  div.skratch-view
+    float left
+    width 400px
+  
+  // buttons
+  button.edit-btn, button.remove-btn
+    border 1px solid black
+    border-radius 7px
+    float right
+    font-size 18px
+    height 32px
+    margin-left 5px
+    padding 0px
+    width 32px
 
-li.skratch.editing
-  > .skratch-view
-    display none
-  > .control
-    display none
-  > .update
-    display block
+  .edit-btn
+    background #f0ad4e
 
-div.skratch-view
-  width 400px
-  float left
+  .remove-btn
+    background #d9534f
 
-// buttons
-
-button.edit-btn, button.remove-btn
-  padding 0px
-  margin-left 5px
-  float right
-  width 32px
-  height 32px
-  border 1px solid black
-  border-radius 7px
-  font-size 18px
-
-.edit-btn
-  background #f0ad4e
-
-.remove-btn
-  background #d9534f
-
-.timestamp
-  font-size 12px
-  background #EEE
+  .timestamp
+    background #EEE
+    font-size 12px
