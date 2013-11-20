@@ -16,7 +16,7 @@ class exports.Page extends lt3.Page
     lt3.page.get('data.skratches').set skratches, (err) =>
       if err
         console.log err
-        $.alert 'An error has occured in saving, plase try again.'
+        $.alert 'An error has occurred in saving, please try again.'
 
   editSkratch: (e) ->
     $li = $(e.currentTarget).closest 'li'
@@ -38,7 +38,7 @@ class exports.Page extends lt3.Page
     lt3.page.get('data.skratches').set skratches, (err) =>
       if err
         console.log err
-        $.alert 'An error has occured in saving, plase try again.'
+        $.alert 'An error has occurred in saving, please try again.'
 
   stopEditing: (e) ->
     $li = $(e.currentTarget).closest 'li'
@@ -55,7 +55,7 @@ class exports.Page extends lt3.Page
     lt3.page.get('data.skratches').set skratches, (err) =>
       if err
         console.log err
-        $.alert 'An error has occured in saving, plase try again.'
+        $.alert 'An error has occurred in saving, please try again.'
 
   template: ->
     # setup header here for now
