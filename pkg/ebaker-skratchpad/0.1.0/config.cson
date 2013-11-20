@@ -9,7 +9,7 @@
     index:
       skratches: [{
         note: {type: 'string', legend: true} 
-        timestamp: 'string'
+        timestamp: 'integer'
       }]
   name: 'Skratchpad'
   type: 'app'
