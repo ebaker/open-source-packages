@@ -69,6 +69,7 @@ class exports.Page extends lt3.Page
 
     # read scratches
     renderSkratch = (index, skratch) ->
+      # setup id as index of array member
       li class: 'skratch', 'data-id': index, ->
         div class: 'skratch-view', ->
           div class: 'note', ->
@@ -85,6 +86,5 @@ class exports.Page extends lt3.Page
 
     if @skratches
       ul class: 'skratch', ->
-        # setup id as index in array
-        for skratch, index in @skratches
+        for index, skratch of @skratches
           renderSkratch index, skratch
